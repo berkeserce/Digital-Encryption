@@ -1,5 +1,4 @@
-# -*- coding: cp1254 -*-
-alf=[["A","B","C","Ç","D","E"],["F","G","Ð","H","I","Ý"],["J","K","L","M","N","O"],["Ö","P","R","S","Þ","T"],["U","Ü","V","Y","Z"," "],[".",",","?","!",":",";"]]                        
+alf=[["A","B","C","Ã‡","D","E"],["F","G","Äž","H","I","Ä°"],["J","K","L","M","N","O"],["Ã–","P","R","S","Åž","T"],["U","Ãœ","V","Y","Z"," "],[".",",","?","!",":",";"]]
 def Sifrele(metin):
     result=""
     for k in metin:
@@ -19,17 +18,17 @@ def Coz(metin):
 def main():
     while True:
         try:
-            command=input("Þifrele/Çöz (S/C):").lower()
+            command=input("Åžifrele/Ã‡Ã¶z (S/C):").lower()
             if command=="s":
-                girdi=input("Þifrelenecek Metin:")
+                girdi=input("Åžifrelenecek Metin:")
                 print(Sifrele(girdi))
             elif command=="c":
-                girdi=input("Çözülecek Kombinasyon:")
+                girdi=input("Ã‡Ã¶zÃ¼lecek Kombinasyon:")
                 print(Coz(girdi))
             else:
-                print("Þifrelemek için 's' Çözmek için 'c' yazýnýz.")
+                print("Åžifrelemek iÃ§in 'S' Ã‡Ã¶zmek iÃ§in 'C' yazÄ±nÄ±z.")
         except:
-            print("Þifrelemek için 's' Çözmek için 'c' yazýnýz.")
+            print("Åžifrelemek iÃ§in 'S' Ã‡Ã¶zmek iÃ§in 'C' yazÄ±nÄ±z.")
     return 0
 main()
 print(Coz(Sifrele("merhaba")))
