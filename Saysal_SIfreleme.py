@@ -32,3 +32,6 @@ def main():
     return 0
 main()
 print(Coz(Sifrele("merhaba")))
+
+#2025
+
